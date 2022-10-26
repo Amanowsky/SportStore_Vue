@@ -2,23 +2,24 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col bg-dark text-white">
-                <a href="" class="navbar-brand">SKLEP SPORTOWY</a>
+                <a class="navbar-brand">SPORTS STORE</a>
             </div>
         </div>
         <div class="row">
             <div class="col-3 bg-info p-2">
-                <h4 class="text-white m-2">Kategorie</h4>
+                <CategoryControls />
             </div>
             <div class="col-9 p-2">
-                <product-list />
+                <ProductList />
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import ProductList from "./ProductList.vue"
-export default {
-    components: {ProductList}
-}
+    import ProductList from "./ProductList";
+    import CategoryControls from "./CategoryControls";
+    export default {
+        components: { ProductList, CategoryControls }
+    }
 </script>
